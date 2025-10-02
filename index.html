@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VK Infotech | Web Development Kolhapur</title>
+
+  <!-- SEO -->
+  <meta name="description" content="VK Infotech Kolhapur - We create modern websites with SEO, hosting & support. Affordable packages for cafes, hospitals, resorts, and businesses.">
+  <meta name="keywords" content="VK Infotech, website design, web development, SEO, hosting, Kolhapur, Gadhinglaj, affordable websites">
+  <meta name="author" content="VK Infotech">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Poppins',sans-serif;background:#f9f9f9;color:#333;line-height:1.6;}
+    header{background:#1a237e;color:#fff;padding:15px 0;position:fixed;width:100%;top:0;z-index:100;}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+    .header-container{display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:24px;font-weight:600;color:#fff;text-decoration:none;}
+    nav ul{list-style:none;display:flex;}
+    nav ul li{margin-left:20px;}
+    nav ul li a{color:#fff;text-decoration:none;font-weight:500;}
+    nav ul li a:hover{color:#ffeb3b;}
+    .burger{display:none;font-size:26px;cursor:pointer;color:#fff;}
+
+    /* Hero */
+    .hero{
+      height:100vh;
+      background:url('https://source.unsplash.com/1600x900/?technology,website') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#1a237e; /* Dark Blue */
+      padding:20px;
+    }
+    .hero h1{font-size:3rem;margin-bottom:20px;}
+    .hero p{font-size:1.2rem;margin-bottom:25px;}
+    .btn{background:#ffeb3b;color:#333;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600;}
+    .btn:hover{background:#fbc02d;}
+
+    /* Section */
+    .section{padding:80px 20px;}
+    .section h2{text-align:center;margin-bottom:40px;font-size:2rem;color:#1a237e;}
+
+    /* Services */
+    .services{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+    .card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);text-align:center;flex:1;min-width:250px;max-width:320px;}
+    .card i{font-size:40px;color:#1a237e;margin-bottom:15px;}
+
+    /* Packages */
+    .packages{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+    .package{background:#fff;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);text-align:center;flex:1;min-width:250px;max-width:320px;}
+    .package h3{margin-bottom:15px;color:#1a237e;}
+    .package p{margin-bottom:15px;}
+    .package strong{color:#e53935;font-size:1.2rem;}
+
+    /* Contact */
+    #contact form{max-width:600px;margin:0 auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    #contact input,#contact textarea{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:5px;}
+    #contact button{background:#1a237e;color:#fff;border:none;padding:12px 20px;border-radius:5px;font-weight:600;cursor:pointer;}
+    #contact button:hover{background:#0d1b60;}
+
+    /* Footer */
+    footer{background:#1a237e;color:#fff;padding:40px 20px;text-align:center;margin-top:40px;}
+    footer p{margin:0;}
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:#fff;
+      border-radius:50%;
+      padding:15px;
+      font-size:28px;
+      box-shadow:0 5px 10px rgba(0,0,0,0.3);
+      z-index:200;
+      transition:0.3s;
+    }
+    .whatsapp-float:hover{background:#1ebe57;}
+
+    /* Responsive */
+    @media(max-width:768px){
+      nav ul{flex-direction:column;position:absolute;top:60px;right:-220px;background:#1a237e;width:200px;padding:20px;transition:0.3s;}
+      nav ul.active{right:0;}
+      .burger{display:block;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">VK Infotech</a>
+      <div class="burger"><i class="fas fa-bars"></i></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>We Build Websites That Grow Your Business</h1>
+      <p>
+        Affordable, responsive, and SEO-friendly websites for cafes, hospitals, resorts,  
+        small scale industries, shops, schools, clinics, hospitals, or any kind of organization and business.
+      </p>
+      <a href="#contact" class="btn">Get Free Quote</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="container">
+      <p>
+        At <strong>VK Infotech</strong>, we specialize in building modern, responsive, and SEO-optimized websites.  
+        Our mission is to help local businesses in Kolhapur & Gadhinglaj grow their online presence with professional web solutions.  
+      </p><br>
+      <p>
+        We provide end-to-end support: from website design & development, SEO optimization, domain & hosting setup, to after-launch maintenance.  
+        Whether you’re running a <em>cafe, hospital, resort, or any business</em>, we create a website that works for you.  
+      </p><br>
+      <p><strong>Expertise:</strong> Web Development • SEO Optimization • Ongoing Support</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>Responsive websites designed with modern HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-search"></i>
+        <h3>SEO Optimization</h3>
+        <p>Rank higher on Google with built-in SEO for better visibility.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-server"></i>
+        <h3>Hosting & Domain</h3>
+        <p>We provide affordable hosting and domain setup for your business.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>Ongoing Support</h3>
+        <p>Continuous support and updates to keep your website running smoothly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <!-- ===== Packages Section ===== -->
+<section id="packages" style="padding:60px 20px; background:#f9f9f9; text-align:center;">
+  <h2 style="color:#1a237e; font-size:2.5rem; margin-bottom:40px;">Our Packages</h2>
+  
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; max-width:1200px; margin:0 auto;">
+    
+    <!-- Starter -->
+    <div style="background:#fff; border-radius:12px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <h3 style="color:#388e3c;">🌱 Starter</h3>
+      <p style="font-size:1.2rem; font-weight:bold; margin:10px 0;">₹5K – ₹7K</p>
+      <ul style="list-style:none; padding:0; text-align:left; line-height:1.8;">
+        <li>✔ 3–4 pages</li>
+        <li>✔ Static info (Home, About, Contact, Facilities)</li>
+        <li>✔ Mobile responsive</li>
+      </ul>
+    </div>
+    
+    <!-- Standard -->
+    <div style="background:#fff; border-radius:12px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <h3 style="color:#1976d2;">🌿 Standard</h3>
+      <p style="font-size:1.2rem; font-weight:bold; margin:10px 0;">₹8K – ₹12K</p>
+      <ul style="list-style:none; padding:0; text-align:left; line-height:1.8;">
+        <li>✔ 5–7 pages (Home, About, Facilities, Gallery, Contact, Location)</li>
+        <li>✔ Google Maps embed</li>
+        <li>✔ Contact form / WhatsApp integration</li>
+        <li>✔ SEO setup</li>
+      </ul>
+    </div>
+    
+    <!-- Premium -->
+    <div style="background:#fff; border-radius:12px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <h3 style="color:#8e24aa;">🌳 Premium</h3>
+      <p style="font-size:1.2rem; font-weight:bold; margin:10px 0;">₹15K – ₹20K</p>
+      <ul style="list-style:none; padding:0; text-align:left; line-height:1.8;">
+        <li>✔ 7–12 pages</li>
+        <li>✔ Slideshow Hero Banner</li>
+        <li>✔ Gallery + Booking Form (WhatsApp or Email)</li>
+        <li>✔ SEO + speed optimization</li>
+        <li>✔ Hosting/domain setup assistance</li>
+      </ul>
+    </div>
+    
+    <!-- Business Pro -->
+    <div style="background:#fff; border-radius:12px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <h3 style="color:#e65100;">🌟 Business Pro</h3>
+      <p style="font-size:1.2rem; font-weight:bold; margin:10px 0;">₹25K – ₹35K+</p>
+      <ul style="list-style:none; padding:0; text-align:left; line-height:1.8;">
+        <li>✔ Everything above</li>
+        <li>✔ Blog / Events page</li>
+        <li>✔ Advanced SEO (keywords, schema)</li>
+        <li>✔ Online booking system (if required)</li>
+        <li>✔ 3–6 months free maintenance</li>
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" placeholder="Your Phone" required>
+      <textarea id="message" placeholder="Your Requirements" required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 VK Infotech Kolhapur | All Rights Reserved.</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919975947060?text=Hello%20VK%20Infotech%2C%20I%20want%20to%20know%20about%20your%20web%20development%20services." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script -->
+  <script>
+    // Burger Menu
+    const burger = document.querySelector('.burger');
+    const navUl = document.querySelector('nav ul');
+    burger.addEventListener('click', ()=> navUl.classList.toggle('active'));
+
+    // Smooth Scroll
+    document.querySelectorAll('nav a, .btn').forEach(link => {
+      link.addEventListener('click', function(e){
+        if(this.getAttribute('href').startsWith("#")){
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if(target){
+            window.scrollTo({
+              top: target.offsetTop - 60,
+              behavior: 'smooth'
+            });
+          }
+          navUl.classList.remove('active'); // close menu on mobile
+        }
+      });
+    });
+
+    // WhatsApp Form
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+
+      const whatsappNumber = "919975947060"; // Your number
+      const whatsappMsg = `Hello VK Infotech,%0AI'm interested in your services.%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ARequirement: ${message}`;
+      
+      window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`, "_blank");
+    });
+  </script>
+</body>
+</html>
